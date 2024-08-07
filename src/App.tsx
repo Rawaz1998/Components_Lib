@@ -1,10 +1,13 @@
 import { Button } from "@/components/ui/button";
+import ProductCard from "./components/productCard";
+import { ThemeProvider } from "@/components/themeProvider";
 
 const App = () => {
   return (
-    <div>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Button>Click Me</Button>
-    </div>
+      <ProductCard />
+    </ThemeProvider>
   );
 };
 
